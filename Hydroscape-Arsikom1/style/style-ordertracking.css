@@ -1,0 +1,215 @@
+body {
+    color: #000;
+    overflow-x: hidden;
+    height: 100%;
+    background-image: url('img/img-ordertracking/gambar.jpeg');
+    background-size: cover;
+    font-family: "Mulish", sans-serif;
+  }
+  
+  .logo {
+    text-align: right; /* Untuk memastikan teks di sebelah kiri gambar */
+  }
+  
+  .logo div{
+    text-align: left;
+  }
+  
+  .logo img, .logo div {
+    display: inline-block;
+    vertical-align: middle; /* Untuk mengatur vertikal alignment elemen */
+  }
+  
+  .navbar-brand .hydro{
+    font-size: 1.5rem;
+    color:black;
+    font-weight: bold;
+    font-family: Verdana, Tahoma, sans-serif;
+  }
+  
+  .navbar-brand .scape{
+    font-size: 1.5rem;
+    color:#87c053;
+    font-weight: bold;
+    font-family: Verdana, Tahoma, sans-serif;
+  }
+  
+  .sub-logo{
+    font-size: 1rem;
+    letter-spacing: 2px;
+  }
+  
+  
+  .search{
+    height: 40px;
+    width: 400px;
+    border-radius: 60px;
+    outline: none;
+    margin-right: -90px;
+    border: 2px solid #4E7302;
+    background-color: #F9F9F9;
+  }
+  
+  .btn0{
+    height: 34px;
+    width: 30%;
+    margin-top: 3px;
+    outline: none;
+    border: none;
+    background: #4E7302;
+    color: white;
+    border-radius: 60px;
+    font-weight: 600;
+  }
+  
+  .d-flex {
+    display: flex;
+  }
+  
+  .d-flex span i {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 40px; /* Sesuaikan ukuran ikon sesuai kebutuhan */
+    height: 40px; /* Sesuaikan ukuran ikon sesuai kebutuhan */
+    line-height: 40px; /* Untuk mengatur ikon ke tengah vertikal */
+    border-radius: 50%; /* Membuat latar belakang bulat */
+    background-color: #4E7302; /* Ganti dengan warna latar belakang yang Anda inginkan */
+    margin-right: 10px; /* Untuk memberikan jarak antara ikon */
+    color: white; /* Ganti dengan warna teks yang sesuai */
+    cursor: pointer;
+  }
+  
+  .d-flex span i:hover {
+    background-color: #f1f1f1;
+    color:black;
+  }
+  
+  .centered-navbar-collapse {
+    display: flex;
+    justify-content: center; /* Mengatur konten horizontal ke tengah */
+    align-items: center; /* Mengatur konten vertikal ke tengah */
+  }
+.icon-content1 {
+    display: flex; /* Menggunakan flexbox untuk susunan horizontal */
+    justify-content: space-between; /* Menempatkan elemen secara merata */
+    align-items: center; /* Untuk memusatkan vertikal elemen-elemen */
+}
+
+.row {
+    display: flex;
+    justify-content: space-between; /* Menyusun elemen secara merata */
+}
+
+.content-item {
+    flex: 1; /* Membagi ruang secara merata antara elemen-elemen */
+    /* Atur gaya dan tampilan elemen sesuai kebutuhan */
+}
+
+
+.card {
+    z-index: 0;
+    background-color: #ECEFF1;
+    padding-bottom: 20px;
+    margin-top: 90px;
+    margin-bottom: 90px;
+    border-radius: 10px;
+}
+
+.top {
+    padding-top: 40px;
+    padding-left: 13% !important;
+    padding-right: 13% !important;
+}
+
+/*Icon progressbar*/
+#progressbar {
+    margin-bottom: 30px;
+    overflow: hidden;
+    color: #6f9e42;
+    padding-left: 0px;
+    margin-top: 30px;
+} 
+
+#progressbar li {
+    list-style-type: none;
+    font-size: 13px;
+    width: 25%;
+    float: left;
+    position: relative;
+    font-weight: 400;
+}
+
+#progressbar .step0:before {
+    font-family: FontAwesome;
+    content: "\f10c";
+    color: #fff;
+}
+
+#progressbar li:before {
+    width: 40px;
+    height: 40px;
+    line-height: 45px;
+    display: block;
+    font-size: 20px;
+    background: #6f9e42;
+    border-radius: 50%;
+    margin: auto;
+    padding: 0px;
+}
+
+/*ProgressBar connectors*/
+#progressbar li:after {
+    content: '';
+    width: 100%;
+    height: 12px;
+    background: #6f9e42;
+    position: absolute;
+    left: 0;
+    top: 16px;
+    z-index: -1;
+}
+
+#progressbar li:last-child:after {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: absolute;
+    left: -50%;
+}
+
+#progressbar li:nth-child(2):after, 
+#progressbar li:nth-child(3):after {
+    left: -50%;
+}
+
+#progressbar li:first-child:after {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    position: absolute;
+    left: 50%;
+}
+
+#progressbar li:last-child:after {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#progressbar li:first-child:after {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+/*Color number of the step and the connector before it*/
+#progressbar li.active:before, 
+#progressbar li.active:after {
+    background: #87C053;
+}
+
+#progressbar li.active:before {
+    font-family: FontAwesome;
+    content: "\f00c";
+}
+
+
+

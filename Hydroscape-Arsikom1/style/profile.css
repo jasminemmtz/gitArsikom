@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,600;1,700&display=swap");
+* {
+  text-decoration: none !important;
+  list-style: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+body {
+    background: #EAEDF4;
+  font-family: "Mulish", sans-serif;
+}
+
+.logo {
+  text-align: right; /* Untuk memastikan teks di sebelah kiri gambar */
+}
+
+.logo div{
+  text-align: left;
+}
+
+.logo img, .logo div {
+  display: inline-block;
+  vertical-align: middle; /* Untuk mengatur vertikal alignment elemen */
+}
+
+.navbar-brand .hydro{
+  font-size: 1.5rem;
+  color:black;
+  font-weight: bold;
+  font-family: Verdana, Tahoma, sans-serif;
+}
+
+.navbar-brand .scape{
+  font-size: 1.5rem;
+  color:#87c053;
+  font-weight: bold;
+  font-family: Verdana, Tahoma, sans-serif;
+}
+
+.sub-logo{
+  font-size: 1rem;
+  letter-spacing: 2px;
+}
+
+
+.search{
+  height: 40px;
+  width: 400px;
+  border-radius: 60px;
+  outline: none;
+  margin-right: -90px;
+  border: 2px solid #4E7302;
+  background-color: #F9F9F9;
+}
+
+.btn0{
+  height: 34px;
+  width: 30%;
+  margin-top: 3px;
+  outline: none;
+  border: none;
+  background: #4E7302;
+  color: white;
+  border-radius: 60px;
+  font-weight: 600;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-flex span i {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 40px; /* Sesuaikan ukuran ikon sesuai kebutuhan */
+  height: 40px; /* Sesuaikan ukuran ikon sesuai kebutuhan */
+  line-height: 40px; /* Untuk mengatur ikon ke tengah vertikal */
+  border-radius: 50%; /* Membuat latar belakang bulat */
+  background-color: #4E7302; /* Ganti dengan warna latar belakang yang Anda inginkan */
+  margin-right: 10px; /* Untuk memberikan jarak antara ikon */
+  color: white; /* Ganti dengan warna teks yang sesuai */
+  cursor: pointer;
+}
+
+.d-flex span i:hover {
+  background-color: #f1f1f1;
+  color:black;
+}
+
+.centered-navbar-collapse {
+  display: flex;
+  justify-content: center; /* Mengatur konten horizontal ke tengah */
+  align-items: center; /* Mengatur konten vertikal ke tengah */
+}
+.card{
+	width: 500px;
+	border: none;
+	border-radius: 15px;
+}
+.media{
+	padding: 30px 30px 15px;
+}
+span.text-muted{
+	font-size: 12px;
+}
+p.pt-1{
+	font-size: 13px;
+	color: #4E7303;
+	cursor: pointer;
+}
+.fas{
+	color: #ABB0B4;
+}
+.fa-angle-right{
+	color: #ABB0B4;
+}
+span{
+	font-size: 14px;
+}
+.justify-content-between{
+	height: 50px;
+	margin-bottom: 10px;
+}
+.justify-content-between:hover{
+	background-color: #88c0537c;
+	color: #4E7303;
+	cursor: pointer;
+}
+.justify-content-between:hover .fas{
+	color: #4E7303;
+}
+.justify-content-between.sample{
+	background-color: #4E7303;
+	color: #fff;
+    border-radius: 10px;
+}
+.preview{
+	color: #ABB0B4;
+}
+
+.justify-content-between.sample:hover{
+	background-color: #88c0537c;
+	color: #4E7303;
+    border-radius: 10px;
+}
+
+.justify-content-between.sample.signout{
+  color: white;
+}
+
+.justify-content-between.sample.signout:hover{
+  color: #4E7303;
+}

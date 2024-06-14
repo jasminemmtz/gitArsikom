@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="style/css-cart-pembayaran/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style/css-cart-pembayaran/cart.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css" />
+	<link
+		  rel="stylesheet"
+		  href="https://unpkg.com/swiper/swiper-bundle.min.css"
+		/>
+	<link
+		href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+		rel="stylesheet"
+	  />
+
+	<title>Shopping Cart</title>
+	
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg bg-white fixed-top">
+      
+    
+        <div class="container">
+          
+          <a class="navbar-brand d-flex ms-lg-0 my-0 my-lg-0" href="#">
+            <div class="logo">
+                <img src="img/logo.png">
+                <div>
+                    <span class="hydro">HYDRO</span>
+                    <span class="scape" >SCAPE</span>
+                    <p class="sub-logo" style="color: black;">HYDROPONIC STORE</p>
+                </div>
+            </div>
+          </a>
+
+          <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse centered-navbar-collapse" id="navbarSupportedContent">
+            <form class="d-flex m-auto m-lg-auto my-0 my-lg-0">
+              <input class="px-4 search" type="search" placeholder="What are you looking for?" aria-label="Search"> 
+              <button class="btn0" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+            <form class="d-flex me-lg-0 my-4 my-lg-0">
+				<a href="index.html"><span style="margin-right: 10px; margin-left: 10px;"><i class="fa-solid fa-house" style="margin-right: 5px;"></i></span></a>
+				<a href="ordertracking.html"><span style="margin-right: 10px;"><i class="fa-regular fa-clipboard" style="margin-right: 5px;"></i></span></a>
+				<a href="cart.html"><span style="margin-right: 10px;"><i class="fa-solid fa-cart-shopping" style="margin-right: 5px;"></i></span></a>
+				<a href="login.html"><span><i class="fa-solid fa-user" style="margin-right: 5px;"></i></span></a>
+            </form>
+          </div>
+          
+        </div>
+        
+      
+    </nav>
+	<div class="container" style="margin-top: 110px;">
+        <section class="bg-light my-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-9">
+                        <div class="card border shadow-0">
+                            <div class="m-4">
+                                <h4 class="card-title mb-4">Your shopping cart</h4>
+                                <div class="row gy-3 mb-4">
+                                    <!-- Product 1 -->
+                                    <div class="col-lg-5">
+                                        <div class="me-lg-5">
+                                            <div class="d-flex">
+                                                <img src="img/Bayam Hijau.webp" class="border rounded me-3"
+                                                    style="width: 96px; height: 96px;" />
+                                                <div class="">
+                                                    <a href="#" class="nav-link">Bayam Hijau</a>
+                                                    <p class="text-muted">500g</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+									<div class="col-lg-2 col-sm-6 col-6 d-flex flex-row flex-lg-column flex-xl-row text-nowrap">
+                                        <div class="">
+                                            <select style="width: 100px;" class="form-select me-4" onchange="calculateTotal()">
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                            </select>
+                                        </div>
+                                        <div class="">
+                                            <text class="h6">Rp. 16.000</text> <br />
+                                            <small class="text-muted text-nowrap"> Rp. 16.000/ item </small>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg col-sm-6 d-flex justify-content-sm-center justify-content-md-start justify-content-lg-center justify-content-xl-end mb-2">
+                                        <div class="float-md-end">
+                                            <a href="#" class="btn btn-light border text-danger icon-hover-danger"><i
+                                                    class="fa fa-trash" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Product 2 -->
+                                <div class="row gy-3 mb-4">
+                                    <div class="col-lg-5">
+                                        <div class="me-lg-5">
+                                            <div class="d-flex">
+                                                <img src="img/Horenzo Hidroponik.webp" class="border rounded me-3"
+                                                    style="width: 96px; height: 96px;" />
+                                                <div class="">
+                                                    <a href="#" class="nav-link">Horenzo Hidroponik</a>
+                                                    <p class="text-muted">750g</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+									<div class="col-lg-2 col-sm-6 col-6 d-flex flex-row flex-lg-column flex-xl-row text-nowrap">
+                                        <div class="">
+                                            <select style="width: 100px;" class="form-select me-4" onchange="calculateTotal()">
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                            </select>
+                                        </div>
+                                        <div class="">
+											<text class="h6">Rp. 16.000</text> <br />
+                                            <small class="text-muted text-nowrap"> Rp. 16.000 / item </small>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg col-sm-6 d-flex justify-content-sm-center justify-content-md-start justify-content-lg-center justify-content-xl-end mb-2">
+                                        <div class="float-md-end">
+                                            <a href="#" class="btn btn-light border text-danger icon-hover-danger"><i
+                                                    class="fa fa-trash" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Product 3 -->
+                                <div class="row gy-3">
+                                    <div class="col-lg-5">
+                                        <div class="me-lg-5">
+                                            <div class="d-flex">
+                                                <img src="img/Arugula(Wild Rocket) Hidroponik.webp"
+                                                    class="border rounded me-3" style="width: 96px; height: 96px;" />
+                                                <div class="">
+                                                    <a href="#" class="nav-link">Arugula Hidroponik</a>
+                                                    <p class="text-muted">250g</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+									<div class="col-lg-2 col-sm-6 col-6 d-flex flex-row flex-lg-column flex-xl-row text-nowrap">
+                                        <div class="">
+                                            <select style="width: 100px;" class="form-select me-4" onchange="calculateTotal()">
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                            </select>
+                                        </div>
+                                        <div class="">
+											<text class="h6">Rp. 16.000</text> <br />
+                                            <small class="text-muted text-nowrap"> Rp. 16.000 / item </small>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg col-sm-6 d-flex justify-content-sm-center justify-content-md-start justify-content-lg-center justify-content-xl-end mb-2">
+                                        <div class="float-md-end">
+                                            <a href="#" class="btn btn-light border text-danger icon-hover-danger"><i
+                                                    class="fa fa-trash" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="border-top pt-4 mx-4 mb-4">
+                                <p><i class="far fa-clock fa-lg text-muted"></i>
+									</i>Pembayaran harus dilakukan dalam waktu 24 jam.</p>
+                                <p class="text-muted">
+                                    Jika tidak diselesaikan dalam waktu 24 jam, maka pesanan anda akan dibatalkan secara otomatis.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3">
+                        <div class="card mb-3 border shadow-0">
+                            <div class="card-body">
+                                <form>
+                                    <div class="form-group">
+                                        <label class="form-label">Masukan kode voucher(optional)</label>
+                                        <div class="input-group">
+                                            <input type="text" class="form-control border" name="" placeholder="Coupon code" />
+                                            <button class="btn btn-light border">Apply</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="card shadow-0 border">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between">
+                                    <p class="mb-2">Total Harga:</p>
+                                    <p class="mb-2">Rp. 16.000</p>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <p class="mb-2">Diskon:</p>
+                                    <p class="mb-2 text-success">-Rp. 0</p>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <p class="mb-2">Pajak:</p>
+                                    <p class="mb-2">Rp. 16.000</p>
+                                </div>
+                                <hr />
+                                <div class="d-flex justify-content-between">
+                                    <p class="mb-2">Total price:</p>
+                                    <p class="mb-2 fw-bold">Rp. 16.000</p>
+                                </div>
+
+                                <div class="mt-3">
+                                    <a href="pembayaran.html" class="btn btn-custom w-100 shadow-0 mb-2">Selesaikan Pembayaran</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container my-5">
+                <header class="mb-4">
+                    <h3>Recommended items</h3>
+                </header>
+                <div class="row">
+                    <!-- Product 4 -->
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="card px-4 border shadow-0 mb-4 mb-lg-0">
+                            <div class="mask px-2" style="height: 50px;">
+                                <div class="d-flex justify-content-between">
+                                    <h6><span class="badge bg-danger pt-1 mt-3 ms-2">New</span></h6>
+                                </div>
+                            </div>
+                            <a href="#" class="">
+                                <img src="img/Bayam Hijau.webp" class="card-img-top rounded-2" />
+                            </a>
+                            <div class="card-body d-flex flex-column pt-3 border-top">
+								<a href="#" class="nav-link">Bayam</a>
+								<div class="price-wrap mb-2">
+									<strong>Rp. 18.900</strong>
+									<del>Rp. 14.900</del>
+								</div>
+								<div class="card-footer d-flex align-items-end pt-0 px-0 pb-0 mt-auto">
+									<a href="#" class="btn btn-outline-primary w-100">Add to cart</a>
+								</div>
+							</div>
+							
+                        </div>
+                    </div>
+                    <!-- Product 5 -->
+					<div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="card px-4 border shadow-0 mb-4 mb-lg-0">
+                            <div class="mask px-2" style="height: 50px;">
+                                <div class="d-flex justify-content-between">
+                                    <h6><span class="badge bg-danger pt-1 mt-3 ms-2">New</span></h6>
+                                </div>
+                            </div>
+                            <a href="#" class="">
+                                <img src="img/Bayam Hijau.webp" class="card-img-top rounded-2" />
+                            </a>
+                            <div class="card-body d-flex flex-column pt-3 border-top">
+                                <a href="#" class="nav-link">Bayam</a>
+                                <div class="price-wrap mb-2">
+                                    <strong class="">Rp. 18.900</strong>
+                                    <del class="">Rp. 14.900</del>
+                                </div>
+                                <div class="card-footer d-flex align-items-end pt-0 px-0 pb-0 mt-auto">
+                                    <a href="#" class="btn btn-outline-primary w-100">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+					<!--PRODUK 6-->
+					<div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="card px-4 border shadow-0 mb-4 mb-lg-0">
+                            <div class="mask px-2" style="height: 50px;">
+                                <div class="d-flex justify-content-between">
+                                    <h6><span class="badge bg-danger pt-1 mt-3 ms-2">New</span></h6>
+                                </div>
+                            </div>
+                            <a href="#" class="">
+                                <img src="img/Bayam Hijau.webp" class="card-img-top rounded-2" />
+                            </a>
+                            <div class="card-body d-flex flex-column pt-3 border-top">
+                                <a href="#" class="nav-link">Bayam</a>
+                                <div class="price-wrap mb-2">
+                                    <strong class="">Rp. 18.900</strong>
+                                    <del class="">Rp. 14.900</del>
+                                </div>
+                                <div class="card-footer d-flex align-items-end pt-0 px-0 pb-0 mt-auto">
+                                    <a href="#" class="btn btn-outline-primary w-100">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

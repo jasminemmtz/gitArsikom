@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,600;1,700&display=swap");
+* {
+  text-decoration: none !important;
+  list-style: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+}
+
+.logo {
+  text-align: right; /* Untuk memastikan teks di sebelah kiri gambar */
+}
+
+.logo div{
+  text-align: left;
+}
+
+.logo img, .logo div {
+  display: inline-block;
+  vertical-align: middle; /* Untuk mengatur vertikal alignment elemen */
+}
+
+.navbar-brand .hydro{
+  font-size: 1.5rem;
+  color:black;
+  font-weight: bold;
+  font-family: Verdana, Tahoma, sans-serif;
+}
+
+.navbar-brand .scape{
+  font-size: 1.5rem;
+  color:#87c053;
+  font-weight: bold;
+  font-family: Verdana, Tahoma, sans-serif;
+}
+
+.sub-logo{
+  font-size: 1rem;
+  letter-spacing: 2px;
+}
+
+
+.search{
+  height: 40px;
+  width: 400px;
+  border-radius: 60px;
+  outline: none;
+  margin-right: -90px;
+  border: 2px solid #4E7302;
+  background-color: #F9F9F9;
+}
+
+.btn0{
+  height: 34px;
+  width: 30%;
+  margin-top: 3px;
+  outline: none;
+  border: none;
+  background: #4E7302;
+  color: white;
+  border-radius: 60px;
+  font-weight: 600;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-flex span i {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 40px; /* Sesuaikan ukuran ikon sesuai kebutuhan */
+  height: 40px; /* Sesuaikan ukuran ikon sesuai kebutuhan */
+  line-height: 40px; /* Untuk mengatur ikon ke tengah vertikal */
+  border-radius: 50%; /* Membuat latar belakang bulat */
+  background-color: #4E7302; /* Ganti dengan warna latar belakang yang Anda inginkan */
+  margin-right: 10px; /* Untuk memberikan jarak antara ikon */
+  color: white; /* Ganti dengan warna teks yang sesuai */
+  cursor: pointer;
+}
+
+.d-flex span i:hover {
+  background-color: #f1f1f1;
+  color:black;
+}
+
+.centered-navbar-collapse {
+  display: flex;
+  justify-content: center; /* Mengatur konten horizontal ke tengah */
+  align-items: center; /* Mengatur konten vertikal ke tengah */
+}
+
+
+#fda_product_tile
+{
+    margin-top: 80px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#fda_product_tile span
+{
+    display: block;
+}
+
+.fda_food_row div.food_tile
+{
+    background-color: #e9e6b2;
+    font-size: 11px;
+    padding: 0 25px;
+    border-radius: 25px;
+    margin-top: 55px;
+}
+
+.fda_food_row div.food_tile.active
+{
+    background-color: rgba(220,230,252,1);
+}
+
+.fda_food_row div.food_tile img
+{
+    position: relative;
+    width: 150px;
+    border-radius: 100%;
+    padding: 20px;
+    background-color: whitesmoke;
+    box-shadow: inset 0 0 25px rgba(255,255,255,0.15),
+                inset 0 4px 0 rgba(0,0,0,0.05),
+                inset 0 -4px 0 rgba(0,0,0,0.05),
+                inset 0 10px 10px rgba(0,0,0,0.09),
+                0 1px 0px rgba(0,0,0,0.1),
+                0 8px 7px rgba(0,0,0,0.15);
+    border: 1px solid rgba(0,0,0,0.1);
+    margin-top: -60px;
+    margin-bottom: 18px;
+}
+
+div.food_tile.active img
+{
+    background-color: rgba(220,230,252,0.85); 
+}
+
+.food_name
+{
+    font-size: 25px;
+    font-weight: 600;
+    color: rgba(38, 29, 86, 1);
+    margin-bottom: 12px;
+}
+
+.food_detail
+{
+    font-size: 15px;
+    color: rgba(38, 29, 86, 0.4);
+    margin-bottom: 15px;   
+}
+
+#food_meta
+{
+    margin: 0;
+    padding: 0;
+}
+
+#food_meta li
+{
+    list-style: none;
+    float: left;
+    width: 50%;
+    margin-bottom: 25px;
+    font-size: 12px;
+    font-weight: 500;
+    color: rgba(38, 29, 86, 1);
+}
+
+#food_meta li span
+{
+    font-size: 12px;
+    font-weight: 500;
+    color: rgba(38, 29, 86, 0.5);   
+}
+
+.btn-default
+{
+    border: 1px solid rgba(0,0,0,0.5);
+    margin-bottom: 15px;
+    padding: 12px 40px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    background-color: #2C3319;
+    color: #fff;
+}
+
+.active .btn-default
+{
+    border: 1px solid rgba(0,0,0,0.04);
+    background-color: #2C3319;
+    color: #fff;
+    box-shadow: 0 5px 1px black;
+}

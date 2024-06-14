@@ -1,0 +1,201 @@
+body {
+    font-family: "Mulish", sans-serif;
+  }
+  
+  .logo {
+    text-align: right; /* Untuk memastikan teks di sebelah kiri gambar */
+  }
+  
+  .logo div{
+    text-align: left;
+  }
+  
+  .logo img, .logo div {
+    display: inline-block;
+    vertical-align: middle; /* Untuk mengatur vertikal alignment elemen */
+  }
+  
+  .navbar-brand .hydro{
+    font-size: 1.5rem;
+    color:black;
+    font-weight: bold;
+    font-family: Verdana, Tahoma, sans-serif;
+  }
+  
+  .navbar-brand .scape{
+    font-size: 1.5rem;
+    color:#87c053;
+    font-weight: bold;
+    font-family: Verdana, Tahoma, sans-serif;
+  }
+  
+  .sub-logo{
+    font-size: 1rem;
+    letter-spacing: 2px;
+  }
+  
+  
+  .search{
+    height: 40px;
+    width: 400px;
+    border-radius: 60px;
+    outline: none;
+    margin-right: -90px;
+    border: 2px solid #4E7302;
+    background-color: #F9F9F9;
+  }
+  
+  .btn0{
+    height: 34px;
+    width: 30%;
+    margin-top: 3px;
+    outline: none;
+    border: none;
+    background: #4E7302;
+    color: white;
+    border-radius: 60px;
+    font-weight: 600;
+  }
+  
+  .d-flex {
+    display: flex;
+  }
+  
+  .d-flex span i {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 40px; /* Sesuaikan ukuran ikon sesuai kebutuhan */
+    height: 40px; /* Sesuaikan ukuran ikon sesuai kebutuhan */
+    line-height: 40px; /* Untuk mengatur ikon ke tengah vertikal */
+    border-radius: 50%; /* Membuat latar belakang bulat */
+    background-color: #4E7302; /* Ganti dengan warna latar belakang yang Anda inginkan */
+    margin-right: 10px; /* Untuk memberikan jarak antara ikon */
+    color: white; /* Ganti dengan warna teks yang sesuai */
+    cursor: pointer;
+  }
+  
+  .d-flex span i:hover {
+    background-color: #f1f1f1;
+    color:black;
+  }
+  
+  .centered-navbar-collapse {
+    display: flex;
+    justify-content: center; /* Mengatur konten horizontal ke tengah */
+    align-items: center; /* Mengatur konten vertikal ke tengah */
+  }
+
+.form-block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.form-box{
+    border: 2px solid #87C053;
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-box h4 {
+    font-weight: bold;
+}
+
+.form-box .form-input {
+    position: relative;
+}
+
+.form-box .form-input input {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;    
+    box-sizing: border-box;
+    box-shadow: none;
+    border: 1px solid #ffe0da;
+    border-radius: 40px;
+    outline: none;
+    color: black;
+    background: transparent;   
+    padding-left: 40px;
+}
+
+.form-box .form-input span {
+    position: absolute;
+    top: 8px;
+    padding-left: 15px;
+    color: #6f9e42;
+}
+
+.form-box .form-input input::placeholder {
+    color: black;
+    padding-left: 0px;
+}
+
+.form-box .form-input input:focus,
+.form-box .form-input input:valid {
+    border: 2px solid #6f9e42;
+}
+
+.form-box .form-input input:focus::placeholder {
+    color: #454b69;
+}
+
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+  background-color: #6f9e42 !important;
+  border:0px;
+}
+
+.form-box button[type="submit"] {
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    background: linear-gradient(45deg, #87C053, #6f9e42);
+    color: #fff;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.form-box button[type="submit"]:hover {
+    background: linear-gradient(45deg, #87C053, #6f9e42);
+}
+
+.form-box .btn-social {
+    color: white;
+    border: 0;
+}
+
+.form-box .btn-facebook {
+    background: #4866a8;
+}
+
+.form-box .btn-google {
+    background: #da3f34;
+}
+
+.form-box .btn-twitter {
+    background: #33ccff;
+}
+
+.form-box .btn-facebook:hover {
+    color: white;
+    background: hsla(221, 40%, 40%, 1);
+}
+
+.form-box .btn-google:hover {
+    color: white;
+    background: hsla(4, 59%, 47%, 1);
+}
+
+.form-box .btn-twitter:hover {
+    color: white;
+    background: hsla(195, 78%, 54%, 1);
+}

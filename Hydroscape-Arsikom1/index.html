@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css" />
+
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <!-- BoxIcons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>HYDROSCAPE</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-white fixed-top">
+      
+    
+        <div class="container">
+          
+          <a class="navbar-brand d-flex ms-lg-0 my-0 my-lg-0" href="#">
+            <div class="logo">
+                <img src="img/logo.png">
+                <div>
+                    <span class="hydro">HYDRO</span>
+                    <span class="scape" >SCAPE</span>
+                    <p class="sub-logo">HYDROPONIC STORE</p>
+                </div>
+            </div>
+          </a>
+
+          <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse centered-navbar-collapse" id="navbarSupportedContent">
+            <form class="d-flex m-auto m-lg-auto my-0 my-lg-0">
+              <input class="px-4 search" type="search" placeholder="What are you looking for?" aria-label="Search"> 
+              <button class="btn0" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+            <form class="d-flex me-lg-0 my-4 my-lg-0">
+              <a href="index.html"><span style="margin-right: 10px; margin-left: 10px;"><i class="fa-solid fa-house" style="margin-right: 5px;"></i></span></a>
+              <a href="ordertracking.html"><span style="margin-right: 10px;"><i class="fa-regular fa-clipboard" style="margin-right: 5px;"></i></span></a>
+              <a href="cart.html"><span style="margin-right: 10px;"><i class="fa-solid fa-cart-shopping" style="margin-right: 5px;"></i></span></a>
+              <a href="login.html"><span><i class="fa-solid fa-user" style="margin-right: 5px;"></i></span></a>
+            </form>
+          </div>
+          
+        </div>
+        
+      
+    </nav>
+
+    <!-- Header Start -->
+    <section class="header mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <!-- Swiper -->
+            <div class="swiper mySwiperHeader position-relative">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="#">
+                    <img src="img/1carousel.png" class="img-fluid" alt="" style="border-radius: 20px;" />
+                  </a>
+                  <div class="carousel-caption" style="text-align: left;">
+                      <br><a href="sayur.html"><button>Shop Now</button></a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <img src="img/2carousel.png" class="img-fluid" alt="" style="border-radius: 20px;"/>
+                  </a>
+                  <div class="carousel-caption" style="text-align: left;">
+                      <br><a href="#produk"><button>Shop Now</button></a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <img src="img/3carousel.png" class="img-fluid" alt="" style="border-radius: 20px;"/>
+                  </a>
+                  <div class="carousel-caption" style="text-align: left;">
+                      <br><a href="buah.html"><button>Shop Now</button></a>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="d-inline position-absolute btn-slider d-none d-sm-block"
+              >
+                <span class="me-1"
+                  ><i class="bx bx-chevron-left-circle btn-slide1"></i
+                ></span>
+                <span
+                  ><i class="bx bx-chevron-right-circle btn-slide2"></i
+                ></span>
+              </div>
+
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Header End -->
+
+    <!-- Banner Start -->
+    <section class="banner mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="card border-0 position-relative">
+              <div class="card-body">
+                <img src="img/fruit-vegetable.png" class="img-fluid" alt="" style="border-radius: 10px;"/>
+                <div class="detail position-absolute px-4">
+                  <h1 class="mb-3" style="font-size: 20px;">Vegetables <br>& Fruits</h1>
+                  <a href="sayur.html" class="btn-first py-2 px-3">Lihat Produk</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="card border-0 position-relative">
+              <div class="card-body">
+                <img src="img/recipe.png" class="img-fluid" alt="" style="border-radius: 10px;"/>
+                <div class="detail position-absolute px-4">
+                  <h1 class="mb-3">Recipes</h1>
+                  <a href="recipe.html" class="btn-first py-2 px-3">Lihat Resep</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="card border-0 position-relative">
+              <div class="card-body">
+                <img src="img/tour.png" class="img-fluid" alt="" style="border-radius: 10px;"/>
+                <div class="detail position-absolute px-4">
+                  <h1 class="mb-3">Video Tour</h1>
+                  <a href="videotour.html" class="btn-first py-2 px-3">Lihat Tour</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Banner End -->
+
+    
+
+    <!-- Product Start -->
+    <section class="product" style="margin-top: 100px;">
+      <div class="container">
+        <div class="row row-title">
+          <div class="col-12">
+            <h1 id="produk" style="font-size: 30px;">Beberapa Produk Kami</h1>
+          </div>
+        </div>
+        <div class="row row-card mt-5">
+          <div class="col-lg-3 col-6 mt-3">
+            <div class="card card-product border-0 p-3 p-sm-4 h-100">
+              <div class="ribbon text-center px-1 py-3 py-sm-4 px-sm-2">
+                <p class="m-0 text-white">30% Off</p>
+              </div>
+              <img src="img/img-buah/Anggur Merah Crimson Seedless.webp" class="img-fluid mx-auto" alt="" />
+              <div class="detail mt-3 mt-sm-5">
+                <a href="#" class="name-product">Anggur Merah</a>
+                <p>250 gram</p>
+                <p class="price m-0 mt-3 mt-sm-0">Rp 17.200</p>
+                <br>
+                <div class="card-body">
+                  <div class="text-right buttons"> <a href="Page-Produk 1.html"> <button class="btn btn-details"><i class="fas fa-info-circle"></i> Detail</button> </a> <a href="#"><button href="#" class="btn btn-cart"><i class="fas fa-cart-plus"></i> Add Cart</button></a> </div>
+                </div>
+      
+                
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-6 mt-3">
+            <div class="card card-product border-0 p-3 p-sm-4 h-100">
+              <div class="ribbon text-center px-1 py-3 py-sm-4 px-sm-2">
+                <p class="m-0 text-white">40% Off</p>
+              </div>
+              <img src="img/Bayam Hijau.webp" class="img-fluid mx-auto" alt="" />
+              <div class="detail mt-3 mt-sm-5">
+                <a href="#" class="name-product">Bayam Hijau</a>
+                <p>200 gram</p>
+                <p class="price m-0 mt-3 mt-sm-0">Rp 12.900</p>
+                <br>
+                <div class="card-body">
+                  <div class="text-right buttons"> <a href="Page-Produk 2.html"> <button class="btn btn-details"><i class="fas fa-info-circle"></i> Detail</button> </a> <a href="#"><button href="#" class="btn btn-cart"><i class="fas fa-cart-plus"></i> Add Cart</button></a> </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-6 mt-3">
+            <div class="card card-product border-0 p-3 p-sm-4 h-100">
+              <div class="ribbon text-center px-1 py-3 py-sm-4 px-sm-2">
+                <p class="m-0 text-white">25% Off</p>
+              </div>
+              <img src="img/Blackberry All Seasons.webp" class="img-fluid mx-auto" alt="" />
+              <div class="detail mt-3 mt-sm-5">
+                <a href="#" class="name-product">Blackberry</a>
+                <p>15 - 25 pcs/pack</p>
+                <p class="price m-0 mt-3 mt-sm-0">Rp 36.500</p>
+                <br>
+                <div class="card-body">
+                  <div class="text-right buttons"> <a href="Page-Produk 3.html"> <button class="btn btn-details"><i class="fas fa-info-circle"></i> Detail</button> </a> <a href="#"><button href="#" class="btn btn-cart"><i class="fas fa-cart-plus"></i> Add Cart</button></a> </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-6 mt-3">
+            <div class="card card-product border-0 p-3 p-sm-4 h-100">
+              <img src="img/Melon Greeniegal.webp" class="img-fluid mx-auto" alt="" />
+              <div class="detail mt-3 mt-sm-5">
+                <a href="#" class="name-product">Melon Greeniegal</a>
+                <p>1.4 - 1.5 kg/pcs</p>
+                <p class="price m-0 mt-3 mt-sm-0">Rp 67.900</p>
+                <br>
+                <div class="card-body">
+                  <div class="text-right buttons"> <a href="Page-Produk 4.html"> <button class="btn btn-details"><i class="fas fa-info-circle"></i> Detail</button> </a> <a href="#"><button href="#" class="btn btn-cart"><i class="fas fa-cart-plus"></i> Add Cart</button></a> </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Product End -->
+
+    <!--Recipe start-->
+    <div class="container container-resep" style="margin-top: 100px;">
+      <h1 style="font-size: 30px;">Most Favorite Recipes</h1>
+      <section id="fda_product_tile" class="col-12">
+      <div class="row fda_food_row">
+          <div class="col-lg-6 col-md-6 my-lg-0 my-3">
+            <div class="food_tile">
+              <img src="img/bg pattern.png" alt="" class="fda_product_img">
+              <span class="food_name">Salad Tuna ala Prancis</span>
+              <span class="food_detail">Pilihan salad lezat yang menampilkan tuna sebagai protein utamanya. Hidangan ini dilengkapi saus zesty ala Prancis yang meningkatkan cita rasa tuna dan sayuran yang menyertainya. Biasanya berisi berbagai sayuran segar, seperti selada, tomat, mentimun, dan zaitun yang memberikan cita rasa segar.</span>
+              <button type="button" class="btn btn-sm btn-default">Read More</button>
+          </div>
+          </div>
+          <div class="col-lg-6 col-md-6 my-lg-0 my-3">
+            <div class="food_tile">
+              <img src="img/bg pattern (1).png" alt="" class="fda_product_img">
+              <span class="food_name">Sup Ayam Ketumbar</span>
+              <span class="food_detail">Sup beraroma yang dibuat dengan potongan ayam empuk dan infus ketumbar, ramuan harum yang menambahkan sentuhan unik dan aromatik pada hidangan. Ini adalah makanan klasik yang menenangkan yang menawarkan kombinasi nikmat antara ayam dan rasa ketumbar yang segar dan bersahaja</span>
+              <button type="button" class="btn btn-sm btn-default">Read More</button>
+          </div>
+          </div>
+          
+          
+      </div>
+    </section>
+  </div>
+  <!--Recipe End-->
+
+  <!--Video-->
+  
+    <div class="container col-12 judul-video" style="margin-top: 100px;">
+      <h1>Video Tour</h1>
+    </div>
+    <div class="row">
+      <div class="col-lg-8 m-auto">
+          <div class="about-video">
+              <div class="about-video-img" style="background-image: url(img/thumbnail.jpg);">
+              </div>
+              <div class="play-btn-wp">
+                  <a href="https://youtu.be/f084SNgfsSM?si=lw9xYMbzAvGAaMU5" data-fancybox="video" class="play-btn">
+                      <i class="fa-solid fa-play" style="color: #4E7302;"></i>
+
+                  </a>
+                  <span>Watch The Tour</span>
+              </div>
+          </div>
+      </div>
+  </div>
+  
+
+
+
+    <!-- Footer Start -->
+    <footer class="footer" style="background-color: #f5f5f5;">
+      <br>
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col-md-2">
+            <img src="img/logo-footer.png" alt="" />
+            
+            
+
+            <div class="sosmed mt-5">
+              <a href="#"><i class="bx bxl-instagram"></i></a>
+              <a href="#"><i class="bx bxl-whatsapp mx-3"></i></a>
+              <a href="#"><i class="bx bxl-facebook-circle"></i></a>
+            </div>
+            
+          </div>
+          <div class="col-md-9">
+            <div class="row justify-content-lg-end">
+              <div class="col-md-4 me-lg-5 mt-4 mt-sm-0">
+                <h3>About Us</h3>
+                <p style="text-align: justify;margin-top: 20px;"><span style="font-weight: bold;">HydroScape adalah</span> aplikasi e-commerce inovatif dengan pengetahuan mendalam tentang hidroponik yang menciptakan pengalaman unik bagi pengguna.</p>
+              </div>
+              <div class="col-md-3 me-lg-5 mt-4 mt-sm-0">
+                <h3>Quick Links</h3>
+                <ul class="p-0">
+                  <li><a href="#" class="text-dark">Beranda</a></li>
+                  <li><a href="#" class="text-dark">Track Pesanan</a></li>
+                  <li><a href="#" class="text-dark">Keranjang</a></li>
+                  <li><a href="#" class="text-dark">Profile</a></li>
+                </ul>
+              </div>
+              <div class="col-md-4 mt-4 mt-sm-0 contact-us">
+                <h3>Contact Us</h3>
+                <ul class="p-0">
+                  <li><i class="fa-solid fa-school"></i> SV IPB University</li>
+                  <li><i class="fa-solid fa-phone"></i> +123456789</li>
+                  <li><i class="fa-solid fa-envelope"></i> nocturnalteam.tplb@gmail.com</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-5 text-center">
+          <p>
+            &copy; Copyright 2023 all right reserved | Built by Nocturnal
+            
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Bootstrap Script -->
+    <script src="bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Jquery -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- JS Custom -->
+    <script src="script/script.js"></script>
+  </body>
+</html>
